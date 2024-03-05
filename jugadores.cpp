@@ -56,13 +56,13 @@ Jugador::Jugador(int v,int a, string n){
         No se pueden asignar valores negativos a hp y attack.
         Máximo 200 hp y 20 attack
     */
-   if (v<=0) vida=1;
-   else if (v>200) vida =200;
-   else vida=v;
-if (a<=0) ataque=1;
-   else if (a>20) ataque =20;
-   else ataque=a;
-   nombre=n;
+   if (v<=0) this -> vida=1;
+   else if (v>200) this -> vida =200;
+   else this -> vida=v;
+if (a<=0) this -> ataque=1;
+   else if (a>20) this -> ataque =20;
+   else this->ataque=a;
+   this -> nombre=n;
 
 }
 
@@ -80,9 +80,9 @@ void Jugador::atacar(Jugador &enemigo){
    if (x!=0)
    {
     enemigo.vida-=ataque; 
-    cout<<nombre <<" ataco a " << enemigo.nombre<<" hizo "<<ataque<<" danio la vida restante de "<<enemigo.nombre<<" es "<<enemigo.vida<<endl;
+    cout<< this -> nombre <<" ataco a " << enemigo.nombre<<" hizo "<< this -> ataque<<" danio la vida restante de "<<enemigo.nombre<<" es "<<enemigo.vida<<endl;
    }
-   else cout << nombre << " ataco a " << enemigo.nombre << " pero fallo, la vida de  "<< enemigo.nombre << " se mantiene en "<< enemigo.vida<<endl;
+   else cout << this -> nombre << " ataco a " << enemigo.nombre << " pero fallo, la vida de  "<< enemigo.nombre << " se mantiene en "<< enemigo.vida<<endl;
    PTRu=this;
 
     /*
