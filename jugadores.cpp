@@ -83,7 +83,7 @@ void Jugador::atacar(Jugador &enemigo){
     cout<< this -> nombre <<" ataco a " << enemigo.nombre<<" hizo "<< this -> ataque<<" danio la vida restante de "<<enemigo.nombre<<" es "<<enemigo.vida<<endl;
    }
    else cout << this -> nombre << " ataco a " << enemigo.nombre << " pero fallo, la vida de  "<< enemigo.nombre << " se mantiene en "<< enemigo.vida<<endl;
-   PTRu=this;
+   enemigo.PTRu=this;
 
     /*
     Nota:
