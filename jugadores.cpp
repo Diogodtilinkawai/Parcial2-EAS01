@@ -29,7 +29,7 @@ int main()
         En cuanto la vida del jugador se reduzca a 0 el programa muestra al ganador y se termina. 
         No importa quien ataca primero.
     */
-    Jugador p1(100,15,"ania"), p2 (200,5,"kda");
+    Jugador p1(100,15,"ania"), p2 (200,10,"kda");
     
     while (p1.vida>0 && p2.vida>0)
     {
